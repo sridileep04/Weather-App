@@ -1,0 +1,29 @@
+# Ignore Node dependencies (these are installed within the container)
+node_modules
+
+# Ignore build output (this is generated within the container)
+build
+dist
+
+# Ignore Docker files themselves if needed (usually not necessary for build context)
+# Dockerfile
+# .dockerignore
+# nginx.conf
+
+# Ignore Git history
+.git
+.gitignore
+
+# Ignore environment variable files (handle secrets properly!)
+.env*
+*.env
+!.env.example
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
